@@ -1,0 +1,120 @@
+@font-face {
+    font-family: porsche;
+    src: url(Fonts/911porschav3cond.ttf);
+}
+
+@font-face {
+    
+    font-family: porsche-expanded;
+    src : url(Fonts/911porschav3expand.ttf)
+}
+
+@font-face {
+    font-family: droid;
+    src: url(Fonts/Droid\ 1997.otf);
+}
+
+:root { 
+    --p : porsche ; 
+    --pe : porsche-expanded ;
+}
+*{
+    
+    margin : 0 ; 
+    padding : 0 ; 
+    color : #fff ; 
+    box-sizing : border-box ; 
+}
+
+html,body { 
+    background-color: black;
+    width : 100% ; 
+    height : 100vh ; 
+    overflow : hidden ; 
+}
+span { 
+    display : inline-block ; 
+}
+
+@media (max-width: 1025px) {
+    
+}
+@media (min-width: 1025px) {
+    .starting-animation {
+        width : 100% ; 
+        height : 100vh ; 
+        background-color: black;
+        display: flex;
+        align-items: center ; 
+        justify-content: center;
+        
+    }
+
+    .starting-animation img { 
+        scale : 2;
+    }
+
+    .landing-page { 
+        width : 100%  ; 
+        height : 100vh ;
+        background : #252525 ; 
+        display : flex ;
+        align-items: center;
+        overflow-x: scroll;
+        justify-content: center;
+
+    }
+    .landing-page::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cursor img{ 
+       position: absolute; 
+       top : 0 ;
+       left : 0 ;
+       width : 40px ; 
+       opacity: 0;
+       z-index: 10;
+    }
+    .panamera { 
+        height : 97% ; 
+        width : 98% ; 
+        background-color: #303030;
+        padding : 2vw  ;
+        position: relative;
+        display: inline-block;
+    }
+    .panamera h1 { 
+        font-family: droid;
+        position: absolute;
+        font-size : 25rem ; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        overflow : hidden ; 
+    }
+    .filled span { 
+        display: inline-block;
+    }
+    .stroke {
+        color : transparent ; 
+        -webkit-text-stroke: 2px #ffffff13;
+        z-index: 3;
+    }
+    
+    .panamera img { 
+        z-index: 2;
+        position: fixed;
+        left : 25% ; 
+        scale : 1.5 ; 
+    }
+    
+}
+
+
+
+
+
+
+
